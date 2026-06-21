@@ -1,4 +1,4 @@
-```css
+css
 *{
     margin:0;
     padding:0;
@@ -86,12 +86,15 @@ nav a:hover{
 }
 
 .hero-left{
-    background:#2b1408;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    
-    );
+    background:
+    linear-gradient(
+        rgba(20,10,5,.65),
+        rgba(20,10,5,.65)
+    ),
+    url("img/wood-bg.jpg");
+
+    background-size:cover;
+    background-position:center;
 }
 
 .conteudo-esquerdo{
@@ -121,7 +124,7 @@ nav a:hover{
 }
 
     
-}
+
 
 .texto h1 span{
     color:white;
@@ -187,6 +190,19 @@ nav a:hover{
     justify-content:center;
     border-radius:50%;
     text-decoration:none;
+}
+.btn-instagram{
+    background:#E1306C;
+    color:white;
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-instagram:hover{
+    opacity:.9;
 }
 .social-buttons{
     display:flex;
@@ -372,82 +388,299 @@ footer p{
     }
 
 }
-@media (max-width: 768px){
-
-    header{
-        padding:10px 0;
-    }
-
-    nav ul{
-        display:none;
-    }
-
-    .social-buttons{
-        display:flex;
-        justify-content:center;
-        gap:10px;
-        margin:10px 0;
-    }
-
-    .hero{
-        display:flex;
-        flex-direction:column;
-        height:auto;
-    }
-
-    .conteudo-esquerdo{
-        display:flex;
-        flex-direction:column;
-        text-align:center;
-        padding:20px;
-        gap:20px;
-    }
-
-    .logo3g{
-        width:220px;
-        max-width:90%;
-    }
-
-    .texto{
-        width:100%;
-    }
-
-    .texto h1{
-        font-size:2rem;
-        line-height:1.2;
-    }
-
-    .texto p{
-        font-size:1rem;
-    }
-
-    .botoes{
-        display:flex;
-        justify-content:center;
-        flex-wrap:wrap;
-        gap:10px;
-    }
-
-    .hero-right img{
-        width:100%;
-        height:auto;
-    }
-
-    .cards{
-        display:grid;
-        grid-template-columns:1fr;
-        gap:20px;
-    }
-
-    .card img{
-        height:auto;
-    }
-
-    .footer-grid{
-        display:flex;
-        flex-direction:column;
-        gap:30px;
-        text-align:center;
-    }
+.social-buttons{
+    display:flex;
+    gap:10px;
+    align-items:center;
 }
-```
+
+.social-icon{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-decoration:none;
+    font-size:22px;
+}
+
+.whatsapp{
+    background:#25D366;
+}
+
+.facebook{
+    background:#1877F2;
+}
+
+.instagram{
+    background:linear-gradient(
+        45deg,
+        #F58529,
+        #DD2A7B,
+        #8134AF,
+        #515BD4
+    );
+}
+.chat-box{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:280px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.25);
+    z-index:9999;
+    font-family:Poppins,sans-serif;
+}
+
+.chat-header{
+    background:#25D366;
+    color:white;
+    padding:15px;
+    font-weight:600;
+}
+
+.chat-body{
+    padding:15px;
+    color:#333;
+    line-height:1.5;
+}
+
+.chat-madeira{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:320px;
+    background:#8b5a2b;
+    border:4px solid #5c3317;
+    border-radius:25px;
+    overflow:hidden;
+    z-index:9999;
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+.chat-topo{
+    background:linear-gradient(
+        180deg,
+        #6b3f1d,
+        #4a2812
+    );
+    color:#fff;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.chat-topo h3{
+    margin:0;
+    font-size:20px;
+}
+
+.fechar-chat{
+    background:#d8a04b;
+    border:none;
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.chat-conteudo{
+    background:#f4e7d1;
+    color:#4a2812;
+    padding:20px;
+    min-height:120px;
+    font-size:16px;
+}
+
+.chat-whatsapp{
+    display:block;
+    text-align:center;
+    padding:14px;
+    background:#25D366;
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    font-size:16px;
+    border-radius:0 0 18px 18px;
+}
+
+.chat-whatsapp:hover{
+    background:#1ea952;
+}
+.chat-logo img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+}
+.chat-logo{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    overflow:hidden;
+    border:3px solid #d8a04b;
+    flex-shrink:0;
+}
+.chat-info{
+    flex:1;
+    margin-left:12px;
+}
+
+.chat-info h3{
+    margin:0;
+    font-size:18px;
+    color:#fff;
+}
+
+.chat-info p{
+    margin:2px 0 0;
+    font-size:13px;
+    color:#f0d7a5;
+}
+/* LOGO FLUTUANTE */
+
+/* LOGO 3G FLUTUANTE */
+
+.chat-toggle{
+
+    position:fixed;
+
+    bottom:20px;
+
+    right:20px;
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    z-index:10000;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.4);
+
+    transition:all .4s ease;
+
+}
+
+.chat-toggle:hover{
+
+    transform:scale(1.1);
+
+}
+
+.chat-toggle img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+/* QUANDO O CHAT ESTIVER ABERTO */
+
+.chat-toggle.aberto{
+
+    bottom:360px;
+
+    transform:scale(1.1);
+
+}
+
+/* CHAT FECHADO INICIALMENTE */
+
+.chat-madeira{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:320px;
+    background:#8b5a2b;
+    border:4px solid #5c3317;
+    border-radius:25px;
+    overflow:hidden;
+    z-index:9999;
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+    display:none;
+}
+
+.chat-topo{
+    background:#5c3317;
+    color:#fff;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.chat-conteudo{
+    background:#f4e7d1;
+    color:#4a2812;
+    padding:20px;
+}
+
+.chat-whatsapp{
+    display:block;
+    text-align:center;
+    background:#25D366;
+    color:#fff;
+    padding:15px;
+    text-decoration:none;
+}
+.redes-sociais{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:20px;
+}
+
+.icone{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-decoration:none;
+    font-size:24px;
+    transition:.3s;
+}
+
+.icone:hover{
+    transform:translateY(-5px);
+}
+
+.whatsapp{
+    background:#25D366;
+}
+
+.facebook{
+    background:#1877F2;
+}
+
+.instagram{
+    background:linear-gradient(
+        45deg,
+        #F58529,
+        #DD2A7B,
+        #8134AF,
+        #515BD4
+    );
+}
