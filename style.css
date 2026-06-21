@@ -1,4 +1,3 @@
-css
 *{
     margin:0;
     padding:0;
@@ -11,7 +10,7 @@ html{
 
 body{
     font-family:'Poppins',sans-serif;
-    background:#2b1a10;;
+    background:#2b1a10;
     color:#fff;
     overflow-x:hidden;
 }
@@ -217,9 +216,9 @@ nav a:hover{
 }
 
 .hero-right img{
-    width:420%;
-    object-fit:auto;
-     object-fit:contain;
+    width:100%;
+    height:auto;
+    object-fit:cover;
 }
 
 /* PROJETOS */
@@ -388,12 +387,6 @@ footer p{
     }
 
 }
-.social-buttons{
-    display:flex;
-    gap:10px;
-    align-items:center;
-}
-
 .social-icon{
     width:45px;
     height:45px;
@@ -460,26 +453,8 @@ footer p{
     overflow:hidden;
     z-index:9999;
     box-shadow:0 10px 30px rgba(0,0,0,.4);
+    display:none;
 }
-
-.chat-topo{
-    background:linear-gradient(
-        180deg,
-        #6b3f1d,
-        #4a2812
-    );
-    color:#fff;
-    padding:15px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.chat-topo h3{
-    margin:0;
-    font-size:20px;
-}
-
 .fechar-chat{
     background:#d8a04b;
     border:none;
@@ -488,14 +463,6 @@ footer p{
     border-radius:50%;
     cursor:pointer;
     font-weight:bold;
-}
-
-.chat-conteudo{
-    background:#f4e7d1;
-    color:#4a2812;
-    padding:20px;
-    min-height:120px;
-    font-size:16px;
 }
 
 .chat-whatsapp{
@@ -508,10 +475,6 @@ footer p{
     font-weight:600;
     font-size:16px;
     border-radius:0 0 18px 18px;
-}
-
-.chat-whatsapp:hover{
-    background:#1ea952;
 }
 .chat-logo img{
 
@@ -597,28 +560,10 @@ footer p{
 /* QUANDO O CHAT ESTIVER ABERTO */
 
 .chat-toggle.aberto{
-
-    bottom:360px;
-
-    transform:scale(1.1);
-
+    bottom:280px;
 }
 
 /* CHAT FECHADO INICIALMENTE */
-
-.chat-madeira{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    width:320px;
-    background:#8b5a2b;
-    border:4px solid #5c3317;
-    border-radius:25px;
-    overflow:hidden;
-    z-index:9999;
-    box-shadow:0 10px 30px rgba(0,0,0,.4);
-    display:none;
-}
 
 .chat-topo{
     background:#5c3317;
@@ -667,20 +612,3 @@ footer p{
     transform:translateY(-5px);
 }
 
-.whatsapp{
-    background:#25D366;
-}
-
-.facebook{
-    background:#1877F2;
-}
-
-.instagram{
-    background:linear-gradient(
-        45deg,
-        #F58529,
-        #DD2A7B,
-        #8134AF,
-        #515BD4
-    );
-}
